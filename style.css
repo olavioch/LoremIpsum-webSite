@@ -1,0 +1,324 @@
+/*Geral*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root{
+    /* paleta do Grid*/
+    --Grid0: #0072C6;
+    --Grid1: #2C5898;
+    --Grid2: #207245;
+    --Grid3: #CB4A32;
+    --Grid4: #733781;
+    --Grid5: #00AFF0;
+    --Grid6: #094AB2;
+    --Grid7: #0073C6;
+    --Grid8: #0093BE;
+    --Grid9: #5558AF;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    max-width: 1440px;
+    margin: auto;
+}
+button{
+    color: #FFF;
+}
+img{
+    width: inherit;
+    height: inherit;
+}
+/*desktop disable*/
+.menuBar__desktop, .banner__expand{
+    display: none;
+}
+/*nav*/
+.menuBar{
+    background-color: #2571B7;
+}
+.container .menuBar__geral{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+    margin: 0 10px;
+}
+
+.menuBar__mobile_item{
+    background-color: #FFF;
+    height: 2px;
+    width:24px;
+}
+.menuBar__mobile_item:nth-child(1){
+    margin-bottom: 6px;
+}
+.menuBar__mobile_item:nth-child(3){
+    margin-top: 6px;
+}
+.menuBar__Login{
+    font-size: 14px;
+    height: 28px;
+    padding: 0px 15px;
+    background-color: #002050;
+}
+
+/*banner*/
+.banner{
+    background-image: url('images/Grupo\ 52.png');
+    background-size: cover;
+    background-position:center;
+}
+.container .banner__geral{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 592px;
+    color: #FFF;
+}
+.banner__header{
+    margin: auto;
+    text-align: center;
+}
+.banner__titulo{
+    font-size: 44px;
+    font-weight: 500px;
+    margin-bottom: 24px;
+}
+.banner__descricao{
+    font-size: 24px;
+    margin-bottom: 60px;
+    line-height: 34px;
+}
+.banner__button{
+    width: 188px;
+    height: 52px;
+    font-size: 21px;
+    background-color: #00A4EF;
+}
+.banner__logo{
+    margin-bottom: 28px;
+}
+
+/*main*/
+.main__geral{
+    margin: 0px 18px;
+}
+main p{
+    color: #737373;
+}
+
+.descricao{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.descricao__text{
+    line-height: 24px;
+    font-size: 15px;
+}
+.descricao__text:first-child{
+margin-bottom: 14px;
+}
+
+/*iniciando sections*/
+/*section default*/
+.default .default__titulo, .default .default__descricao{
+    text-align: center;
+    margin-bottom: 27px;
+}
+.default__descricao{
+    line-height: 24px;
+    font-size: 15px;
+}
+.default__titulo{
+    color: #2571B7;
+    padding: 8px 0;
+}
+
+/*section servicos*/
+.servicos{
+    margin-bottom: 60px;
+}
+.servicos__servico{
+    display: flex;
+    background-color: pink;
+    height: 124px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    color: #FFF;
+}
+.servicos__img{
+    padding: 0 11px;
+}
+.servicos__desc{
+    width: 225px;
+}
+.servicos__desc_title{
+    margin-bottom: 8px;
+}
+.servicos__desc_descricao{
+    font-size: 12px;
+    color: inherit;
+    line-height: 18px;
+}
+.servico--bg0{background-color: var(--Grid0);}
+.servico--bg1{background-color: var(--Grid1);}
+.servico--bg2{background-color: var(--Grid2);}
+.servico--bg3{background-color: var(--Grid3);}
+.servico--bg4{background-color: var(--Grid4);}
+.servico--bg5{background-color: var(--Grid5);}
+.servico--bg6{background-color: var(--Grid6);}
+.servico--bg7{background-color: var(--Grid7);}
+.servico--bg8{background-color: var(--Grid8);}
+.servico--bg9{background-color: var(--Grid9);}
+
+/*section skills*/
+.skills__skill{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    border-bottom: 3px solid #DEDEDE;
+    padding-bottom: 22.5px;
+    margin-bottom: 22.5px;
+}
+.skills__skill:last-child{
+    border: none;
+}
+.skills--color1{color: #7FBA00;}
+.skills--color2{color: #00A4EF;}
+.skills--color3{color: #FFB900;}
+.skills--border1{border: 1px solid #7FBA00;}
+.skills--border2{border: 1px solid #00A4EF;}
+.skills--border3{border: 1px solid #FFB900;}
+.skills__img{
+    width: 70px;
+    height: 70px;
+    margin-left: 18px;
+}
+.skills__title, .skills__desc_descricao{
+    margin-bottom: 18px;
+}
+.skills__desc_descricao{
+    font-size: 12px;
+    line-height: 18px;
+}
+.skills__button{
+    height: 30px;
+    background-color: #FFF;
+    padding: 0 4px;
+}
+
+/* section options*/
+.secaoOptions .default__titulo{
+    margin-bottom: 65px;
+    padding-top: 10px;
+}
+.options{
+    border: 3px solid #DEDEDE;
+    margin-bottom: 60px;
+}
+.options__option{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 150px;
+}
+.options__option:nth-child(1), .options__option:nth-child(2), .options__option:nth-child(3){
+    border-bottom: 3px solid #DEDEDE;
+}
+.options__title{
+    margin-bottom: 18px;
+    color: #F25022;
+}
+.options__desc{
+    font-size: 12px;
+    width: 276px;
+}
+
+/*section destaque*/
+.secaoDestaque{
+    margin: 0;
+    background-image: url('images/Grupo\ 89.png');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 60px;
+}
+.secaoDestaque .container{
+    margin: 0px 18px;
+    height: 224px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.secaoDestaque__desc{
+    font-size: 21px;
+    line-height: 35px;
+    color: #FFF;
+}
+
+/*section forms*/
+.forms{
+    background-color: #E6E6E6;
+    padding: 15px 18px;
+    margin-bottom: 80px;
+}
+.forms__geral{
+    color: #737373;
+    margin: 0 18px;
+}
+.forms__input_title{
+    font-size: 12px;
+}
+.forms__label:nth-child(1) .forms__input_title{
+    color: #2571B7;
+}
+.forms__label:nth-child(1) .forms__input{
+    border:2px solid #2571B7 ;
+}
+.forms__input{
+    padding: 10px 0;
+    margin-bottom: 21px;
+    margin-top: 6px;
+}
+.forms__submit, .forms__input{
+    width: 95%;
+    padding-left: 4%;
+}
+.forms__submit{
+    font-size: 21px;
+    background-color: #00A4EF;
+    color: #FFF;
+    padding: 13px 0;
+}
+
+/* footer*/
+.footerArea__logo{
+    text-align: center;
+}
+.footerArea__logo_img img:first-child{
+    margin-right: 30px;
+}
+.footerArea__logo_img img{
+    width: 145px;
+    height: 40px;
+}
+.footerArea__copy{
+    color: #B4B4B4;
+    font-size: 12px;
+    margin-top: 17px;
+    margin-bottom: 24px;
+}
+
+@media (min-width:1000px){
+    .servicos{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 48px;
+    }
+}
