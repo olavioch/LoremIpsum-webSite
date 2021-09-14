@@ -34,9 +34,12 @@ img{
 .menuBar__desktop, .banner__expand{
     display: none;
 }
+
 /*nav*/
 .menuBar{
     background-color: #2571B7;
+    position: fixed;
+    width: 100%;
 }
 .container .menuBar__geral{
     display: flex;
@@ -69,6 +72,7 @@ img{
     background-image: url('images/Grupo\ 52.png');
     background-size: cover;
     background-position:center;
+    padding-top: 48px;
 }
 .container .banner__geral{
     display: flex;
