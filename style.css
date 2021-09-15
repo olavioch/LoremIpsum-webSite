@@ -23,7 +23,7 @@
     max-width: 1440px;
     margin: auto;
 }
-button{
+button, input[type=submit]{
     color: #FFF;
     cursor: pointer;
 }
@@ -208,15 +208,15 @@ main p{
 .skills--border1{border: 1px solid #7FBA00;}
 .skills--border2{border: 1px solid #00A4EF;}
 .skills--border3{border: 1px solid #FFB900;}
-.skills--color1:hover{
+.skills--color1:hover:not(h5){
     color:#FFF;
     background-color: #7FBA00;
 }
-.skills--color2:hover{
+.skills--color2:hover:not(h5){
     color:#FFF;
     background-color: #00A4EF;
 }
-.skills--color3:hover{
+.skills--color3:hover:not(h5){
     color:#FFF;
     background-color: #FFB900;
 }
