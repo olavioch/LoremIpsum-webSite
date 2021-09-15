@@ -25,6 +25,7 @@
 }
 button{
     color: #FFF;
+    cursor: pointer;
 }
 img{
     width: inherit;
@@ -65,6 +66,10 @@ img{
     height: 28px;
     padding: 0px 15px;
     background-color: #002050;
+    transition: background-color 1s;
+}
+.menuBar__Login:hover{
+    background-color:#0045ac ;
 }
 
 /*banner*/
@@ -101,6 +106,10 @@ img{
     height: 52px;
     font-size: 21px;
     background-color: #00A4EF;
+    transition: background-color 1s;
+}
+.banner__button:hover{
+    background-color: #6dd1ff;
 }
 .banner__logo{
     margin-bottom: 28px;
@@ -193,12 +202,24 @@ main p{
 .skills__skill:last-child{
     border: none;
 }
-.skills--color1{color: #7FBA00;}
-.skills--color2{color: #00A4EF;}
-.skills--color3{color: #FFB900;}
+.skills--color1{color: #7FBA00; transition: background-color 1s;}
+.skills--color2{color: #00A4EF; transition: background-color 1s;}
+.skills--color3{color: #FFB900; transition: background-color 1s;}
 .skills--border1{border: 1px solid #7FBA00;}
 .skills--border2{border: 1px solid #00A4EF;}
 .skills--border3{border: 1px solid #FFB900;}
+.skills--color1:hover{
+    color:#FFF;
+    background-color: #7FBA00;
+}
+.skills--color2:hover{
+    color:#FFF;
+    background-color: #00A4EF;
+}
+.skills--color3:hover{
+    color:#FFF;
+    background-color: #FFB900;
+}
 .skills__img{
     width: 70px;
     height: 70px;
@@ -260,14 +281,14 @@ main p{
     justify-content: center;
     text-align: center;
     align-items: center;
-    height: 320px;
+    height: 224px;
 }
 .secaoDestaque__desc{
     font-size: 21px;
     line-height: 35px;
     color: #FFF;
     margin: 0 18px;
-    font-size: 48px;
+    font-size: 24px;
     line-height: 64px;
 }
 
@@ -306,6 +327,10 @@ main p{
     background-color: #00A4EF;
     color: #FFF;
     padding: 13px 0;
+    transition: background-color 1s;
+}
+.forms__submit:hover{
+    background-color: #6dd1ff;
 }
 
 /* footer*/
@@ -386,6 +411,16 @@ main p{
         height: 67px;
         font-size: 28px;
     }
+    .banner__expand{
+        display: block;
+        background-color: transparent;
+    }
+    .banner__essentials{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 60px;
+    }
 
     /*inicio main*/
     .descricao{
@@ -463,6 +498,7 @@ main p{
         padding: 0 8px;
     }
 
+    /*section options*/
     .options{
         display: flex;
         border: 4px solid #DEDEDE;
@@ -482,4 +518,32 @@ main p{
         font-size: 16px;
         line-height: 24px;
     }
+
+    .secaoDestaque__desc{
+        font-size: 48px;
+    }
+    .secaoDestaque .container{
+        height: 320px;
+    }
+
+    /*forms*/
+    .forms{
+        padding: 32px 48px;
+        width: 516px;
+    }
+    .forms__input{
+        padding:19px 0;
+        padding-left: 4%;
+    }
+    .forms__input_title{
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+    .forms__label:nth-child(5) .forms__input{
+        margin-bottom: 48px;
+    }
+    .forms__submit{
+        width: 100%;
+    }
+
 }
