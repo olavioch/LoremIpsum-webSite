@@ -31,7 +31,7 @@ img{
     height: inherit;
 }
 /*desktop disable*/
-.menuBar__desktop, .banner__expand{
+.menuBar__desktop, .banner__expand, .skills__border{
     display: none;
 }
 
@@ -124,7 +124,7 @@ main p{
     font-size: 15px;
 }
 .descricao__text:first-child{
-margin-bottom: 14px;
+    margin-bottom: 14px;
 }
 
 /*iniciando sections*/
@@ -136,6 +136,7 @@ margin-bottom: 14px;
 .default__descricao{
     line-height: 24px;
     font-size: 15px;
+    margin: 0 18px;
 }
 .default__titulo{
     color: #2571B7;
@@ -254,16 +255,20 @@ margin-bottom: 14px;
     margin-bottom: 60px;
 }
 .secaoDestaque .container{
-    margin: 0px 18px;
     height: 224px;
     display: flex;
-    align-items: center;
+    justify-content: center;
     text-align: center;
+    align-items: center;
+    height: 320px;
 }
 .secaoDestaque__desc{
     font-size: 21px;
     line-height: 35px;
     color: #FFF;
+    margin: 0 18px;
+    font-size: 48px;
+    line-height: 64px;
 }
 
 /*section forms*/
@@ -271,6 +276,8 @@ margin-bottom: 14px;
     background-color: #E6E6E6;
     padding: 15px 18px;
     margin-bottom: 80px;
+    max-width: 564px;
+    margin: auto;
 }
 .forms__geral{
     color: #737373;
@@ -302,6 +309,9 @@ margin-bottom: 14px;
 }
 
 /* footer*/
+.footerArea{
+    margin-top: 100px;
+}
 .footerArea__logo{
     text-align: center;
 }
@@ -319,10 +329,157 @@ margin-bottom: 14px;
     margin-bottom: 24px;
 }
 
+
+/*responsividade desktop*/
 @media (min-width:1000px){
+    /*menu bar*/
+    .container .menuBar__geral{
+        height: 80px;
+    }
+    .menuBar__desktop{
+        display: flex;
+    }
+    .menuBar__mobile{
+        display: none;
+    }
+    .menuBar__desktop{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .menuBar__logo{
+        height: 24px;
+    }
+    .menuBar__desktopItems{
+        display: flex;
+        list-style: none;
+        align-items: center;
+    }
+    .menuBar__desktop_item{
+        margin-right: 77px;
+    }
+    .menuBar__desktop_item a{
+        color: #FFF;
+        text-decoration: none;
+    }
+    .menuBar__Login{
+        width: 130px;
+    }
+
+    /*banner*/
+    .container .banner__geral{
+        height: 820px;
+    }
+    .banner__header{
+        width: 100%;
+        text-align: start;
+    }
+    .banner__titulo{
+        font-size: 80px;
+    }
+    .banner__descricao{
+        font-size: 32px;
+        margin-bottom: 96px;
+    }
+    .banner__button{
+        width: 266px;
+        height: 67px;
+        font-size: 28px;
+    }
+
+    /*inicio main*/
+    .descricao{
+        margin-top: 96px;
+        margin-bottom: 96px;
+    }
+    .descricao__text, .default__descricao{
+        font-size: 20px;
+    }
+    .default__titulo{
+        font-size: 40px;
+    }
+    .default .default__titulo, .default .default__descricao {
+        margin-bottom: 48px;
+    }
+
+    /*section servicos*/
     .servicos{
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 48px;
+    }
+    .servicos__servico{
+        justify-content: start;
+    }
+    .servicos__img{
+        margin-left: 28px;
+        padding-right: 20px;
+    }
+    .servicos__desc{
+        width: 100%;
+    }
+    .servicos__desc_title{
+        font-size: 20px;
+    }
+    .servicos__desc_descricao{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    /*section skills*/
+    .skills{
+        display: flex;
+        justify-content: space-between;
+    }
+    .skills__skill{
+        flex-direction: column;
+        text-align: center;
+        border: none;
+        width: 336px;
+    }
+    .skills__img{
+        width: 160px;
+        height: 160px;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .skills__title{
+        font-size: 20px;
+        margin-bottom: 1px solid black;
+    }
+    .skills__border{
+    border-top: 4px solid #DEDEDE;
+    display: block;
+    width: 53px;
+    margin: auto;
+    padding-bottom: 20px;
+    }
+    .skills__desc_descricao{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .skills__button{
+        height: 35px;
+        padding: 0 8px;
+    }
+
+    .options{
+        display: flex;
+        border: 4px solid #DEDEDE;
+    }
+    .options__option{
+        width: 100%;
+        height: 224px;
+    }
+    .options__option:nth-child(1), .options__option:nth-child(2), .options__option:nth-child(3){
+        border: none;
+        border-right: 4px solid #DEDEDE;
+    }
+    .options__title{
+        font-size: 20px;
+    }
+    .options__desc{
+        font-size: 16px;
+        line-height: 24px;
     }
 }
